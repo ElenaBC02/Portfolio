@@ -1,0 +1,148 @@
+body {
+    background-color: #272727;
+    background: linear-gradient(334deg, #1d1d1d, #1b1b1b, #2272ff);
+	background-size: 200% 200%;
+	animation: gradient-animation 6s ease infinite;
+}
+
+@keyframes gradient-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+.wrapper {
+    /*background-color: yellowgreen;*/
+    height: calc(100vh - 101px);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 50px;
+    gap: 20px;
+}
+
+.container__img {
+   /* background-color: yellow;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    /*background-color: violet;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__sobremi {
+    height: auto;
+    width: 50%;
+    border-radius: 10px;
+}
+
+.container__description {
+    /*background-color: tomato;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container__head {
+    font-size: 32px;
+    text-align: center;
+    color: #fff;
+}
+
+.container__text {
+    padding: 10px 25px 50px 25px;
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-align: justify;
+    border-top: 1px solid #ffffffbe;
+    border-radius: 10px;
+    /*background-color: orange;*/
+}
+
+/*---------------------------*/
+/*  Para pantallas pequeñas  */ 
+/*---------------------------*/
+
+@media (min-width: 0rem) and (max-width: 50rem) {
+    
+    body {
+        background-size: 200% 200%;
+    }
+
+    .wrapper {
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .container__head {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    
+    .container__text {
+        padding: 10px 25px;
+        font-size: 16px;
+    }
+}
+
+/*----------------*/
+/*  Para tablets  */ 
+/*----------------*/
+
+@media (min-width: 50rem) and (max-width: 80rem) {
+    
+    body {
+        background-size: 300% 300%;
+    }
+
+    .img__sobremi {
+        height: auto;
+        width: 60%;
+    }
+    
+    .container__head {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .container__text {
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+}
+
+/*---------------------------*/
+/*  para pantallas grandes   */
+/*---------------------------*/
+
+@media (min-width: 80rem) and (max-width: 100rem) {
+
+    .img__sobremi {
+        width: 55%;
+    }
+    
+    .container__head {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    
+    .container__text {
+        padding: 10px 20px;
+        font-size: 20px;
+    }
+}

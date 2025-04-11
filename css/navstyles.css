@@ -1,0 +1,138 @@
+#nav {
+    min-height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #1d1d1d;
+    border-bottom: 2mm ridge #2272ff;
+}
+
+#nav .name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 10%;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.sections__button {
+    display: flex;
+    padding: 1.5rem;
+}
+
+#nav .sections {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#nav .section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 19px;
+    margin: 10px;
+    color: #fff;
+}
+
+#nav .section:hover {
+    color: #2272FF;
+}
+
+.section.active {
+    font-size: 19px;
+    margin: 8px;
+    color: #e7e6e691 !important;
+}
+
+#nav .name:hover {
+    text-decoration: underline;
+}
+
+.open__menu,
+.close__menu {
+    display: none;
+    font-size: 30px;
+    background: none;
+    border: none;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/*-------------------------------------*/
+/*  Para pantallas pequeñas y tablets  */
+/*-------------------------------------*/
+
+@media (min-width: 0rem) and (max-width: 60rem) {
+    .open__menu,
+    .close__menu {
+        display: block;
+        border: 0;
+        font-size: 24px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .close__menu {
+        color: #1D1D1D;
+    }
+
+    .sections__button {
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 1rem;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        padding: 1rem;
+        background-color: #FAF5E9;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    .sections__button.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    #nav .sections {
+        flex-direction: column;
+        justify-content: start;
+        align-items: end;
+    }
+
+    .section {
+        color: #1D1D1D !important;
+    }
+
+    .section.active {
+        color: #616161d5 !important;
+    }
+    
+    #nav .name {
+        max-width: 50%;
+    }
+}
+
+/*---------------------------*/
+/*  para pantallas grandes   */
+/*---------------------------*/
+
+@media (min-width: 60rem) and (max-width: 100rem) {
+    
+    #nav .name {
+        max-width: 200px;
+    }
+    
+}

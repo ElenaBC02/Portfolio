@@ -119,6 +119,10 @@
     .section.active {
         color: #616161d5 !important;
     }
+
+    .section:hover {
+        color: #2272FF !important;
+    }
     
     #nav .name {
         max-width: 50%;

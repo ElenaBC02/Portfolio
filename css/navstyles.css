@@ -1,3 +1,8 @@
+header {
+    position: relative;
+    z-index: 2;
+}
+
 #nav {
     min-height: 5rem;
     display: flex;
@@ -86,18 +91,18 @@
     .sections__button {
         opacity: 0;
         visibility: hidden;
+        background-color: #FAF5E9;
         display: flex;
         flex-direction: column;
         align-items: end;
         gap: 1rem;
 
-        position: absolute;
+        position: fixed;
         top: 0;
         right: 0;
         bottom: 0;
 
         padding: 1rem;
-        background-color: #FAF5E9;
         box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
     }
 

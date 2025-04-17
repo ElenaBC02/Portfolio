@@ -1,0 +1,233 @@
+body {
+    background: #1D1D1D;
+    background: linear-gradient(160deg, rgba(30, 30, 30, 1) 80%,  rgba(35, 115, 255, 1) 100%);
+    height: 100vh;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3.125rem;
+}
+
+/* Estilos carrousel */
+.carrousel {
+    width: 90vw;
+    height: auto;
+    padding: 1rem;
+    color: #ececec;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: #3030305b;
+    overflow: hidden;
+}
+  
+.carrousel .slide-container {
+    width: 250%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    color: #ececec;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: #1b1b1b7c;
+    padding: 1rem 13rem;
+    transition: all 0.5s ease;
+    transform: translateX(0%);
+}
+  
+.carrousel .puntos {
+    width: 100%;
+    margin: 1rem 0 0;
+    padding: 0.4rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+}
+  
+.carrousel .punto {
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem 1rem 0;
+    color: #ececec;
+    transition: all 0.4s ease;
+    border-radius: 1rem;
+    background-color: #303030;
+    box-shadow: 0.6rem 0.6rem 1.2rem #24242467, -0.6rem -0.6rem 1.2rem #3c3c3c27, inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+  
+.carrousel .punto.activo {
+    background-color: #2272ff;
+}
+
+/* Estilos cards */
+.card {
+    height: 34.375rem;
+    width: 23.75rem;
+    border-radius: 1.25rem;
+    background-color: #272727da;
+    border: 2px solid #ecececb2;
+    box-shadow: 0 0 .9375rem rgba(34, 114, 255, 0.2);
+}
+
+.card__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .625rem .875rem;
+}
+
+.card__img {
+    height: 15.625rem;
+    width: 100%;
+    border-radius: 1.125rem 1.125rem 0rem 1.125rem;
+    border-bottom: 2px solid #1d1d1d;
+}
+
+.name {
+    color: #fff;
+    font-size: 1.5625rem;
+    font-weight: 400;
+}
+
+.description {
+    color: #faf5e9;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 1.25rem 0rem;
+}
+
+.button {
+    border: none;
+    font-size: 1.125rem;
+    color: #1d1d1d;
+    padding: .5rem 1rem;
+    border-radius: .5rem;
+    margin-bottom: .625rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.button:hover {
+    background-color: #2272ff;
+    color: white;
+}
+
+/*---------------------------*/
+/*  Para pantallas pequeñas  */
+/*---------------------------*/
+
+@media (min-width: 0rem) and (max-width: 50rem) {
+    body {
+        height: 105vh;
+    }
+    
+    /* Estilos carrousel */
+    .carrousel .slide-container {
+        padding: 1rem 2.5rem;
+
+    }
+
+    .carrousel .punto {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    /* Estilos cards */
+    .card {
+        height: 28.125rem;
+        width: 18.125rem;
+    }
+    
+    .card__img {
+        height: 12.5rem;
+    }
+    
+    .name {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+    
+    .description {
+        font-size: 1rem;
+    }
+    
+    .button {
+        font-size: 1rem;
+    }
+}
+
+/*----------------*/
+/*  Para tablets  */ 
+/*----------------*/
+
+@media (min-width: 50rem) and (max-width: 75rem) {
+    body {
+        height: 110vh;
+    }
+    
+    /* Estilos carrousel */
+    .carrousel .slide-container {
+        padding: 1rem 8rem;
+        transition: all 0.5s ease;
+        transform: translateX(0%);
+    }
+    
+    /* Estilos cards */
+    .card {
+        height: 31.25rem;
+        width: 21.875rem;
+    }
+    
+    .card__img {
+        height: 14.0625rem;
+    }
+    
+    .description {
+        font-size: 1.125rem;
+        margin: .625rem 0rem;
+    }
+    
+    .button {
+        font-size: 1rem;
+    }
+}
+
+/*---------------------------*/
+/*  para pantallas grandes   */
+/*---------------------------*/
+
+@media (min-width: 75rem) and (max-width: 100rem) {
+    
+    body {
+        height: 110vh;
+    }
+    
+    /* Estilos carrousel */
+    .carrousel .slide-container {
+        padding: 1rem 9rem;
+    }
+    
+    /* Estilos cards */
+    .card {
+        height: 31.25rem;
+        width: 21.875rem;
+    }
+    
+    .card__img {
+        height: 14.0625rem;
+    }
+    
+    .description {
+        font-size: 1.125rem;
+        margin: .625rem 0rem;
+    }
+    
+    .button {
+        font-size: 1rem;
+    }
+}

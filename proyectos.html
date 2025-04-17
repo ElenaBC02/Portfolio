@@ -1,47 +1,138 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="./css/styles.css">
-        <link rel="stylesheet" href="./css/navstyles.css">
-        <link rel="stylesheet" href="./css/sobremi.css">
-        <script src="./js/router.js" defer></script>
-        <script src="./js/navscript.js" defer></script>
-        <title>PortFolio Elena Benítez Castro</title>
-    </head>
-    <body>
-        <header>
-            <nav id="nav">
-                <div class="name">
-                    <a href="./index.html" alt="Volver a la cabecera">
-                        <div>
-                            <h1>ELENA BENÍTEZ</h1>
-                        </div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/navstyles.css">
+    <link rel="stylesheet" href="./css/proyectos.css">
+    <script src="./js/router.js" defer></script>
+    <script src="./js/navscript.js" defer></script>
+    <script src="./js/proyectos.js" defer></script>
+    <title>PortFolio Elena Benítez Castro</title>
+</head>
+
+<body>
+    <header>
+        <nav id="nav">
+            <div class="name">
+                <a href="./index.html" alt="Volver a la cabecera">
+                    <div>
+                        <h1>ELENA BENÍTEZ</h1>
+                    </div>
+                </a>
+            </div>
+
+            <button class="open__menu" id="open">☰</button>
+
+            <div class="sections__button" id="sections__button">
+
+                <button class="close__menu" id="close">✖</button>
+
+                <div class="sections" id="nav-sections">
+                    <a href="./sobremi.html">
+                        <div id="sobremi" class="section">Sobre mi</div>
+                    </a>
+                    <a href="./skills.html">
+                        <div id="skills" class="section">Skills</div>
+                    </a>
+                    <a href="./proyectos.html">
+                        <div id="proyectos" class="section">Proyectos</div>
+                    </a>
+                    <a href="./perfil_profesional.html">
+                        <div id="perfil_profesional" class="section">Perfil profesional</div>
+                    </a>
+                    <a href="./encuentrame.html">
+                        <div id="encuentrame" class="section">Encuéntrame</div>
                     </a>
                 </div>
 
-                <button class="open__menu" id="open">☰</button>
+            </div>
+        </nav>
+    </header>
 
-                <div class="sections__button" id="sections__button">
+    <main id="content">
 
-                    <button class="close__menu" id="close">✖</button>
+        <div class="carrousel">
 
-                    <div class="sections" id="nav-sections">
-                        <a href="./sobremi.html"><div id="sobremi" class="section">Sobre mi</div></a>
-                        <a href="./skills.html"><div id="skills" class="section">Skills</div></a>
-                        <a href="./proyectos.html"><div id="proyectos" class="section">Proyectos</div></a>
-                        <a href="./perfil_profesional.html"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
-                        <a href="./encuentrame.html"><div id="encuentrame" class="section">Encuéntrame</div></a>
+            <div class="slide-container">
+                <div class="slide__content">
+
+                    <div class="card">
+                        <div class="image__content">
+
+                            <div class="card__image">
+                                <img src="./img/portada-gamersgrams.png" alt="Foto diseño" class="card__img">
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+                            <h2 class="name">Garmersgram</h2>
+                            <p class="description">Elaboración de una aplicación móvil
+                                con el previo análisis de mercado y necesidades de los
+                                posibles consumidores de esta, utilizando la técnica del
+                                doble diamante.
+                            </p>
+
+                            <button class="button">Ver más</button>
+                        </div>
                     </div>
 
                 </div>
-            </nav>
-        </header>
 
-        <main id="content">
-            <h1>SOBRE MI</h1>
-        </main>
-        <footer></footer>
-    </body>
+                <div class="slide__content">
+
+                    <div class="card">
+                        <div class="image__content">
+
+                            <div class="card__image">
+                                <img src="./img/giphy.gif" alt="Foto diseño" class="card__img">
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+                            <h2 class="name">En proceso...</h2>
+                            <p class="description">Creando nuevo contenido</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="slide__content">
+
+                    <div class="card">
+                        <div class="image__content">
+
+                            <div class="card__image">
+                                <img src="./img/giphy.gif" alt="Foto diseño" class="card__img">
+                            </div>
+
+                        </div>
+
+                        <div class="card__content">
+                            <h2 class="name">En proceso...</h2>
+                            <p class="description">Creando nuevo contenido</p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <ul class="puntos">
+                <li class="punto activo"></li>
+                <li class="punto"></li>
+                <li class="punto"></li>
+            </ul>
+        </div>
+
+    </main>
+    <footer></footer>
+</body>
+
 </html>

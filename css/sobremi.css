@@ -1,6 +1,6 @@
 body {
     background-color: #272727;
-    background: linear-gradient(334deg, #1d1d1d, #1b1b1b, #2272ff);
+    background: linear-gradient(334deg, #3d3d3d, #1b1b1b, #2272ff);
 	background-size: 200% 200%;
 	animation: gradient-animation 6s ease infinite;
 }
@@ -18,16 +18,14 @@ body {
 }
 
 .wrapper {
-    /*background-color: yellowgreen;*/
-    height: calc(100vh - 101px);
+    height: calc(100vh - 6.3125rem);
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    padding: 50px;
-    gap: 20px;
+    padding: 3.125rem;
+    gap: 1.25rem;
 }
 
 .container__img {
-   /* background-color: yellow;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +33,6 @@ body {
 }
 
 figure {
-    /*background-color: violet;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -45,11 +42,10 @@ figure {
 .img__sobremi {
     height: auto;
     width: 50%;
-    border-radius: 10px;
+    border-radius: .625rem;
 }
 
 .container__description {
-    /*background-color: tomato;*/
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -57,20 +53,19 @@ figure {
 }
 
 .container__head {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     color: #fff;
 }
 
 .container__text {
-    padding: 10px 25px 50px 25px;
-    font-size: 24px;
+    padding: .625rem 1.5625rem 3.125rem 1.5625rem;
+    font-size: 1.5rem;
     font-weight: 400;
     color: #fff;
     text-align: justify;
-    border-top: 1px solid #ffffffbe;
-    border-radius: 10px;
-    /*background-color: orange;*/
+    border-top: .0625rem solid #ffffffbe;
+    border-radius: .625rem;
 }
 
 /*---------------------------*/
@@ -90,13 +85,13 @@ figure {
     }
     
     .container__head {
-        font-size: 16px;
-        margin-bottom: 20px;
+        font-size: 1rem;
+        margin-bottom: 1.25rem;
     }
     
     .container__text {
-        padding: 10px 25px;
-        font-size: 16px;
+        padding: .625rem 1.5625rem;
+        font-size: 1rem;
     }
 }
 
@@ -116,13 +111,13 @@ figure {
     }
     
     .container__head {
-        font-size: 18px;
-        margin-bottom: 10px;
+        font-size: 1.125rem;
+        margin-bottom: .625rem;
     }
     
     .container__text {
-        padding: 10px 20px;
-        font-size: 18px;
+        padding: .625rem 1.25rem;
+        font-size: 1.125rem;
     }
 }
 
@@ -137,12 +132,12 @@ figure {
     }
     
     .container__head {
-        font-size: 24px;
-        margin-bottom: 10px;
+        font-size: 1.5rem;
+        margin-bottom: .625rem;
     }
     
     .container__text {
-        padding: 10px 20px;
-        font-size: 20px;
+        padding: .625rem 1.25rem;
+        font-size: 1.25rem;
     }
 }

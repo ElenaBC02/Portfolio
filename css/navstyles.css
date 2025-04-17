@@ -1,5 +1,5 @@
 #nav {
-    min-height: 80px;
+    min-height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -13,8 +13,8 @@
     justify-content: center;
     align-items: center;
     max-width: 10%;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: .625rem 1.25rem;
+    font-size: 1rem;
     color: #fff;
 }
 
@@ -35,8 +35,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 19px;
-    margin: 10px;
+    font-size: 1.1875rem;
+    margin: .625rem;
     color: #fff;
 }
 
@@ -45,8 +45,8 @@
 }
 
 .section.active {
-    font-size: 19px;
-    margin: 8px;
+    font-size: 1.1875rem;
+    margin: .5rem;
     color: #e7e6e691 !important;
 }
 
@@ -57,11 +57,11 @@
 .open__menu,
 .close__menu {
     display: none;
-    font-size: 30px;
+    font-size: 1.875rem;
     background: none;
     border: none;
     color: white;
-    padding: 10px;
+    padding: .625rem;
     cursor: pointer;
 }
 
@@ -74,7 +74,7 @@
     .close__menu {
         display: block;
         border: 0;
-        font-size: 24px;
+        font-size: 1.5rem;
         background-color: transparent;
         cursor: pointer;
     }
@@ -136,7 +136,7 @@
 @media (min-width: 60rem) and (max-width: 100rem) {
     
     #nav .name {
-        max-width: 200px;
+        max-width: 12.5rem;
     }
     
 }

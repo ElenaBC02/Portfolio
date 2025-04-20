@@ -1,0 +1,10 @@
+main {
+    background: #242323;
+}
+
+iframe {
+    height: calc(100vh - 80px);
+    width: 100%;
+    background: #242323;
+
+}

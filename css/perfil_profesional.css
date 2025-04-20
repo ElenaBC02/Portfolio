@@ -2,7 +2,7 @@
 body {
     position: relative;
     margin: 0;
-    background-image: url(/img/particulas.jpg);
+    background-image: url(/assets/img/particulas.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,7 +21,7 @@ body::before {
 }
 
 /* Estilos para añadir en el js + efecto activo */
-#background {
+.background {
     position: absolute;
     top: 0;
     left: 0;
@@ -30,7 +30,7 @@ body::before {
     z-index: -1;
 }
 
-#background::after {
+.background::after {
     content: " ";
     position: absolute;
     top: 0;
@@ -42,7 +42,7 @@ body::before {
     transition: opacity 0.5s ease;
 }
 
-#background.activo::after {
+.background.activo::after {
     opacity: 1; 
 }
 

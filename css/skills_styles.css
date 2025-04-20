@@ -4,14 +4,14 @@ body {
 
 .wrapper__skills {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 1.5625rem 6.25rem;
-    padding: 1.875rem;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5625rem 4rem;
+    padding: 1rem;
     align-items: center;
 }
 
 .box {
-    width: 100%;
+    width: auto;
     height: 18.75rem;
     padding: 1.25rem;
     background-color: #f1f0f0;
@@ -140,16 +140,55 @@ body {
 }
 
 /*---------------------------*/
-/*  para pantallas grandes   */
+/*  Para pantallas pequeñas  */ 
 /*---------------------------*/
 
-@media (min-width: 94rem) and (max-width: 100rem) {
+@media (min-width: 0rem) and (max-width: 45rem) {
 
     .wrapper__skills {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-        gap: 1.5625rem 6.75rem;
-        padding: 1.5625rem;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5625rem 2rem;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .logos {
+        width: 90vw;
+    }
+}
+
+/*----------------*/
+/*  Para tablets  */ 
+/*----------------*/
+
+@media (min-width: 45rem) and (max-width: 80rem) {
+    
+    .wrapper__skills {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5625rem 2rem;
+        padding: 1rem;
+        align-items: center;
+    }
+
+    .logos {
+        width: 95vw;
+    }
+}
+
+
+/*---------------------------*/
+/*  para pantallas grandes   */
+/*---------------------------*/
+
+@media (min-width: 80rem) and (max-width: 100rem) {
+
+    .wrapper__skills {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5625rem 4rem;
+        padding: 1rem;
         align-items: center;
     }
     

@@ -1,8 +1,8 @@
-const fondos = document.querySelectorAll ("#background img");
+const fondos = document.querySelectorAll (".background img");
 const secciones = document.querySelectorAll (".container__section");
 const cara = document.querySelectorAll (".cuadrado");
 const cruz = document.querySelectorAll (".detras");
-const fondosDiv = document.querySelectorAll("#background");
+const fondosDiv = document.querySelectorAll(".background");
 
 secciones.forEach((seccion, index) => {
     seccion.addEventListener("mouseover", () => {

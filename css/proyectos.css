@@ -102,6 +102,7 @@ main {
 }
 
 .button {
+    background-color: #fff;
     border: none;
     font-size: 1.125rem;
     color: #1d1d1d;

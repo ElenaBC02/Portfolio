@@ -8,14 +8,13 @@
         <link rel="stylesheet" href="./css/encuentrame.css">
         <script src="./js/router.js" defer></script>
         <script src="./js/navscript.js" defer></script>
-        <script src="./js/encuentrame.js" defer></script>
         <title>PortFolio Elena Benítez Castro</title>
     </head>
     <body>
         <header>
             <nav id="nav">
                 <div class="name">
-                    <a href="./index.html" alt="Volver a la cabecera">
+                    <a href="./index.html">
                         <div>
                             <h1>ELENA BENÍTEZ</h1>
                         </div>
@@ -43,7 +42,7 @@
         <main id="content">
             <div class="wrapper__encuentrame">
                 <div class="container form">
-                    <form>
+                    <form method="POST" ACTION="url">
                         <label for="nombre">Nombre:</label><br>
                         <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required><br>
                       
@@ -56,6 +55,7 @@
                         <label for="telefono">Número de teléfono:</label><br>
                         <div class="telefono-group">
                             <select id="prefijo" name="prefijo" required>
+                                <option value="" disabled selected>Prefijo</option>
                                 <option value="+34">+34 (España)</option>
                                 <option value="+1">+1 (EE.UU.)</option>
                                 <option value="+44">+44 (Reino Unido)</option>
@@ -77,27 +77,27 @@
                     <a href="https://www.linkedin.com/in/elena-ben%C3%ADtez-castro-4a6371276/" target="_blank">
                         <div class="link">
                             <h2>Linkedln</h2>
-                            <img src="./img/Logo-linkedln.png" alt="Logo Linkedln">
+                            <img src="./assets/img/Logo-linkedln.png" alt="Logo Linkedln">
                         </div>
                     </a>
 
                     <a href="https://github.com/ElenaBC02" target="_blank">
                         <div class="link">
                             <h2>Github</h2>
-                            <img src="./img/github.png" alt="Logo Github">
+                            <img src="./assets/img/github.png" alt="Logo Github">
                         </div>
                     </a>
 
                     <a href="./assets/cv-elena-benitez-castro.pdf" download="CV Elena Benítez Castro">
                         <div class="link">
                             <h2>CV</h2>
-                            <img src="./img/CV.png" alt="Mi CV">
+                            <img src="./assets/img/CV.png" alt="Mi CV">
                         </div>
                     </a>
                 </div>
                 
             </div>
         </main>
-        <footer></footer>
+    
     </body>
 </html>

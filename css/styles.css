@@ -21,7 +21,7 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 1.25rem;
     height: 100vh;
 }
 
@@ -29,25 +29,25 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 42px;
-    height: calc(100vh - 100px);
-    width: calc(100vw - 56px);
+    padding: 2.625rem;
+    height: calc(100vh - 6.25rem);
+    width: calc(100vw - 3.5rem);
 }
 
 /*  Nombre + cursos  */
 
 .inf__name {
-    font-size: 90px;
+    font-size: 5.625rem;
     font-weight: 800;
     color: #FFFFFF;
 }
 
 .inf__courses {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 100;
     color: #2272FF;
     display: inline-block;
-    min-height: 49px;
+    min-height: 3.0625rem;
     white-space: nowrap;
 }
 
@@ -56,13 +56,13 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
-    margin-top: 96px;
+    height: 12.5rem;
+    margin-top: 6rem;
 }
 
 .loading__container__box {
-    height: 96px;
-    width: 800px;
+    height: 6rem;
+    width: 50rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -79,25 +79,25 @@ a {
 
 .loading__tittle {
     color: #FFFFFF;
-    margin: 10px;
-    font-size: 25px;
+    margin: .625rem;
+    font-size: 1.5625rem;
 }
 
 .loading__container {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    padding: 2px;
-    border: 2px solid #FFFFFF;
-    height: 64px;
-    width: 456px;
+    padding: .125rem;
+    border: .125rem solid #FFFFFF;
+    height: 4rem;
+    width: 28.5rem;
 }
 
 .loading__container__bar {
     background-color: #FFFFFF;
-    margin: 2px;
-    height: 52px;
-    width: 35px;
+    margin: .125rem;
+    height: 3.25rem;
+    width: 2.1875rem;
 }
 
 .loading__container :last-child {
@@ -124,16 +124,16 @@ a {
     align-items: center;
 
     position: absolute;
-    bottom: 80px;
-    right: 80px;
+    bottom: 5rem;
+    right: 5rem;
 
     color: #1D1D1D;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
-    font-size: 16px;
-    height: 60px;
-    width: 140px;
-    border-radius: 8px;
+    font-size: 1rem;
+    height: 3.75rem;
+    width: 8.75rem;
+    border-radius: .5rem;
     background-color: #FFFFFF;
 }
 
@@ -149,62 +149,59 @@ a {
 /*---------------------------*/
 /*  Para pantallas pequeñas  */
 /*---------------------------*/
-@media (min-width: 0rem) and (max-width: 35rem) {
+@media (min-width: 0px) and (max-width: 560px) {
     
     /* Estilos de pagina */
 
     .fontPage__content {
-        padding: 20px;
-        height: calc(100vh - 100px);
-        width: calc(100vw - 50px);
+        padding: 1.25rem;
     }
 
     /*  Nombre + cursos  */
 
     .inf__name {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .inf__courses {
-        font-size: 16px;
-        font-weight: 100;
-        min-height: 17px;
+        font-size: 1rem;
+        min-height: 1.0625rem;
     }
 
     .loading {
-        margin-top: 100px;
+        margin-top: 6.25rem;
     }
 
     .loading__container__box {
-        height: 32px;
-        width: 300px;
+        height: 2rem;
+        width: 18.75rem;
     }
 
     /*  Barra de carga  */
 
     .loading__tittle {
-        font-size: 12px;
+        font-size: .75rem;
     }
 
     .loading__container {
-        height: 40px;
-        width: 250px;
+        height: 2.5rem;
+        width: 15.625rem;
     }
 
     .loading__container__bar {
-        height: 30px;
-        width: 16px;
+        height: 1.875rem;
+        width: 1rem;
     }
 
     /*  Botón   */
 
     .fontPage__button {
         position: absolute;
-        bottom: 60px;
-        right: 40px;
-        font-size: 12px;
-        height: 50px;
-        width: 120px;
+        bottom: 3.75rem;
+        right: 2.5rem;
+        font-size: .75rem;
+        height: 3.125rem;
+        width: 7.5rem;
     }
 }
 
@@ -212,62 +209,56 @@ a {
 /*  Para tablets pequeñas  */
 /*-------------------------*/
 
-@media (min-width: 35rem) and (max-width: 50rem) {
+@media (min-width: 560px) and (max-width: 800px) {
     /* Estilos de pagina */
 
     .fontPage__content {
-        padding: 40px;
-        height: calc(100vh - 100px);
-        width: calc(100vw - 50px);
+        padding: 2.5rem;
+        width: calc(100vw - 3.125rem);
     }
 
     /*  Nombre + cursos  */
 
     .inf__name {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
 
     .inf__courses {
-        font-size: 24px;
+        font-size: 1.5rem;
         font-weight: 200;
-        margin-top: 10px;
-        min-height: 28px;
+        margin-top: .625rem;
+        min-height: 1.75rem;
     }
 
     .loading {  
-        margin-top: 80px;
+        margin-top: 5rem;
 }
 
     .loading__container__box { 
-        height: 48px;
-        width: 500px;
+        height: 3rem;
+        width: 31.25rem;
     }
 
     /*  Barra de carga  */
 
     .loading__tittle {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .loading__container {
-        height: 60px;
-        width: 350px;
+        height: 3.75rem;
+        width: 21.875rem;
     }
 
     .loading__container__bar {
-        height: 50px;
-        width: 24px;
+        height: 3.125rem;
+        width: 1.5rem;
     }
 
     /*  Botón  */
 
     .fontPage__button {
-        position: absolute;
-        bottom: 80px;
-        right: 80px;
-        font-size: 16px;
-        height: 60px;
-        width: 130px;
+        width: 8.125rem;
     }
 }
 
@@ -275,62 +266,60 @@ a {
 /*  Para tablets  */ 
 /*----------------*/
 
-@media (min-width: 50rem) and (max-width: 87.5rem) {
+@media (min-width: 800px) and (max-width: 1400px) {
     /* Estilos de pagina */
 
     .fontPage__content {
-        padding: 40px;
-        height: calc(100vh - 50px);
-        width: calc(100vw - 50px);
+        padding: 2.5rem;
+        height: calc(100vh - 3.125rem);
+        width: calc(100vw - 3.125rem);
     }
 
     /*  Nombre + cursos  */
 
     .inf__name {
-        font-size: 55px;
+        font-size: 3.4375rem;
     }
 
     .inf__courses {
-        font-size: 30px;
+        font-size: 1.875rem;
         font-weight: 200;
-        margin-top: 10px;
-        min-height: 35px;
+        margin-top: .625rem;
+        min-height: 2.1875rem;
     }
 
     .loading { 
-        margin-top: 90px;
+        margin-top: 5.625rem;
     }
 
     .loading__container__box { 
-        height: 60px;
-        width: 400px;
+        height: 3.75rem;
+        width: 25rem;
     }
 
     /*  Barra de carga  */
 
     .loading__tittle {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .loading__container {
-        height: 60px;
-        width: 350px;
+        height: 3.75rem;
+        width: 21.875rem;
     }
 
     .loading__container__bar {
-        height: 50px;
-        width: 24px;
+        height: 3.125rem;
+        width: 1.5rem;
     }
 
     /*  Botón   */
 
     .fontPage__button {
         position: absolute;
-        bottom: 70px;
-        right: 60px;
-        font-size: 16px;
-        height: 60px;
-        width: 150px;
+        bottom: 4.375rem;
+        right: 3.75rem;
+        width: 9.375rem;
     }
 }
 
@@ -338,61 +327,58 @@ a {
 /*  para pantallas grandes   */
 /*---------------------------*/
 
-@media (min-width: 87.5rem) and (max-width: 100rem) {
+@media (min-width: 1400px) and (max-width: 1600px) {
     /* Estilos de pagina */
 
     .fontPage__content {
-        padding: 60px;
-        height: calc(100vh - 50px);
-        width: calc(100vw - 50px);
+        padding: 3.75rem;
+        height: calc(100vh - 3.125rem);
+        width: calc(100vw - 3.125rem);
     }
 
     /*  Nombre + cursos  */
 
     .inf__name {
-        font-size: 75px;
+        font-size: 4.6875rem;
     }
 
     .inf__courses {
-        font-size: 36px;
+        font-size: 2.25rem;
         font-weight: 200;
-        margin-top: 5px;
-        min-height: 44px;
+        margin-top: .3125rem;
+        min-height: 2.75rem;
     }
 
     .loading { 
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
     .loading__container__box { 
-        height: 72px;
-        width: 500px;
+        height: 4.5rem;
+        width: 31.25rem;
     }
 
     /*  Barra de carga  */
 
     .loading__tittle {
-        font-size: 22px;
+        font-size: 1.375rem;
     }
 
     .loading__container {
-        height: 70px;
-        width: 425px;
+        height: 4.375rem;
+        width: 26.5625rem;
     }
 
     .loading__container__bar {
-        height: 60px;
-        width: 28px;
+        height: 3.75rem;
+        width: 1.75rem;
     }
 
     /*  Botón  */
 
     .fontPage__button {
         position: absolute;
-        bottom: 70px;
-        right: 60px;
-        font-size: 16px;
-        height: 60px;
-        width: 150px;
+        bottom: 4.375rem;
+        right: 3.75rem;
     }
 }

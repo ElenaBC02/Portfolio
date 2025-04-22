@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="Author: Elena Benítez Castro">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/navstyles.css">
@@ -12,11 +13,12 @@
     </head>
     <body>
         <header>
+            <!-- Estructura barra de navegación -->
             <nav id="nav">
                 <div class="name">
-                    <a href="./index.html">
+                    <a href="./index.html" title="Volver a la cabecera">
                         <div>
-                            <h2>ELENA BENÍTEZ</h2>
+                            <h1>ELENA BENÍTEZ</h1>
                         </div>
                     </a>
                 </div>
@@ -28,27 +30,29 @@
                     <button class="close__menu" id="close">✖</button>
 
                     <div class="sections" id="nav-sections">
-                        <a href="./sobremi.html"><div id="sobremi" class="section">Sobre mi</div></a>
-                        <a href="./skills.html"><div id="skills" class="section">Skills</div></a>
-                        <a href="./proyectos.html"><div id="proyectos" class="section">Proyectos</div></a>
-                        <a href="./perfil_profesional.html"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
-                        <a href="./encuentrame.html"><div id="encuentrame" class="section">Encuéntrame</div></a>
+                        <a href="./sobremi.html" title="Sobre mi"><div id="sobremi" class="section">Sobre mi</div></a>
+                        <a href="./skills.html" title="Skills/Habilidades"><div id="skills" class="section">Skills</div></a>
+                        <a href="./proyectos.html" title="Proyectos"><div id="proyectos" class="section">Proyectos</div></a>
+                        <a href="./perfil_profesional.html" title="Perfil profesional"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
+                        <a href="./encuentrame.html" title="Encuéntrame"><div id="encuentrame" class="section">Encuéntrame</div></a>
                     </div>
 
                 </div>
             </nav>
         </header>
 
-        <main id="content">
+        <main id="content">  <!-- Main con id enlazado a router.js -->
 
             <div class="wrapper">
 
+                <!-- Imágen -->
                 <div class="container__img">
                     <figure>
-                        <img class="img__sobremi" alt="Foto Elena Benítez" src="./assets/img/sobremi.jpg">
+                        <img class="img__sobremi" alt="Foto Elena Benítez" src="./assets/img/sobremi.jpg" loading="lazy">
                     </figure>
                 </div>
 
+                <!-- Descripción -->
                 <div class="container__description">
                     <div class="container__head">
                         <h1>❝ Ganará siempre el esfuerzo continuo, incansable y persistente ❞</h1>

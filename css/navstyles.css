@@ -4,7 +4,7 @@ header {
 }
 
 #nav {
-    min-height: 5rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -74,7 +74,7 @@ header {
 /*  Para pantallas pequeñas y tablets  */
 /*-------------------------------------*/
 
-@media (min-width: 0rem) and (max-width: 60rem) {
+@media (min-width: 0px) and (max-width: 960px) {
     .open__menu,
     .close__menu {
         display: block;
@@ -138,7 +138,7 @@ header {
 /*  para pantallas grandes   */
 /*---------------------------*/
 
-@media (min-width: 60rem) and (max-width: 100rem) {
+@media (min-width: 960px) and (max-width: 1600px) {
     
     #nav .name {
         max-width: 12.5rem;

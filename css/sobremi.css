@@ -72,7 +72,7 @@ figure {
 /*  Para pantallas pequeñas  */ 
 /*---------------------------*/
 
-@media (min-width: 0rem) and (max-width: 50rem) {
+@media (min-width: 0px) and (max-width: 800px) {
     
     body {
         background-size: 200% 200%;
@@ -99,7 +99,7 @@ figure {
 /*  Para tablets  */ 
 /*----------------*/
 
-@media (min-width: 50rem) and (max-width: 80rem) {
+@media (min-width: 800px) and (max-width: 1280px) {
     
     body {
         background-size: 300% 300%;
@@ -125,7 +125,7 @@ figure {
 /*  para pantallas grandes   */
 /*---------------------------*/
 
-@media (min-width: 80rem) and (max-width: 100rem) {
+@media (min-width: 1280px) and (max-width: 1600px) {
 
     .img__sobremi {
         width: 55%;

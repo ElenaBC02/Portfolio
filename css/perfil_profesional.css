@@ -59,9 +59,9 @@ body::before {
 #container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 60px;
+    gap: 3.75rem;
     justify-items: center;
-    margin: 60px 100px;
+    margin: 3.75rem 6.25rem;
     position: relative;
 }
   
@@ -77,15 +77,15 @@ body::before {
 
 /* Estilos de las cards */
 .container__section {
-    margin: 4px;
+    margin: .25rem;
     display: inline-flex;
     flex-direction: row;
-    width: 450px;
-    height: 300px;
-    padding: 20px;
+    width: 28.125rem;
+    height: 18.75rem;
+    padding: 1.25rem;
     background-color: #faf5e925;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+    border-radius: .625rem;
+    box-shadow: 0 .25rem .5rem rgba(0, 0, 0, 0.6);
 }
 
 /* Animación en 3D */
@@ -94,7 +94,7 @@ body::before {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    font-size: 30px;
+    font-size: 1.875rem;
     font-weight: 600;
     text-align: center;
     position: relative;
@@ -118,7 +118,7 @@ body::before {
 
 .detras {
     transform: rotateY(180deg);
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 400;
 }
 
@@ -126,13 +126,13 @@ body::before {
 /*  Para pantallas pequeñas  */ 
 /*---------------------------*/
 
-@media (min-width: 0rem) and (max-width: 43rem) {
+@media (min-width: 0px) and (max-width: 688px) {
     
     /* Posición de los contenedores */
     #container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        margin: 60px 30px;
+        gap: 1.875rem;
+        margin: 3.75rem 1.875rem;
     }
 
     .container__section:nth-child(3) {
@@ -151,17 +151,18 @@ body::before {
 
     /* Estilos de las cards */
     .container__section {
-        width: 170px;
-        height: 150px;
+        width: 150px;
+        height: 125px;
+        padding: 1rem;
     }
 
     /* Animación en 3D */
     .cuadrado {
-        font-size: 16px;
+        font-size: 1rem;
     }
 
     .detras {
-        font-size: 16px;
+        font-size: 1rem;
     }
 }
 
@@ -169,13 +170,13 @@ body::before {
 /*  Para tablets pequeñas  */ 
 /*-------------------------*/
 
-@media (min-width: 43rem) and (max-width: 70rem) {
+@media (min-width: 688px) and (max-width: 1120px) {
     
     /* Posición de los contenedores */
     #container {
         grid-template-columns: repeat(2, 1fr);
-        gap: 30px;
-        margin: 60px 90px;
+        gap: 1.875rem;
+        margin: 3.75rem 5.625rem;
     }
 
     .container__section:nth-child(3) {
@@ -194,13 +195,13 @@ body::before {
 
     /* Estilos de las cards */
     .container__section {
-        width: 275px;
-        height: 150px;
+        width: 17.1875rem;
+        height: 9.375rem;
     }
 
     /* Animación en 3D */
     .cuadrado {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 }
 
@@ -208,13 +209,13 @@ body::before {
 /*  Para tablets  */ 
 /*----------------*/
 
-@media (min-width: 70rem) and (max-width: 80rem) {
+@media (min-width: 1120px) and (max-width: 1280px) {
 
     /* Posición de los contenedores */
     #container {
         grid-template-columns: repeat(3, 1fr);
-        gap: 30px;
-        margin: 60px 90px;
+        gap: 1.875rem;
+        margin: 3.75rem 5.625rem;
     }
 
     .container__section:nth-child(5) {
@@ -223,13 +224,13 @@ body::before {
 
     /* Estilos de las cards */
     .container__section {
-        width: 300px;
-        height: 180px;
+        width: 18.75rem;
+        height: 11.25rem;
     }
 
     /* Animación en 3D */
     .cuadrado {
-        font-size: 25px;
+        font-size: 1.5625rem;
     }
 }
 
@@ -237,11 +238,11 @@ body::before {
 /*  para pantallas grandes   */
 /*---------------------------*/
 
-@media (min-width: 80rem) and (max-width: 100rem) {
+@media (min-width: 1280px) and (max-width: 1600px) {
     
     /* Posición de los contenedores */
     #container {
-        gap: 30px;
+        gap: 1.875rem;
     }
 
     .container__section:nth-child(5) {
@@ -250,8 +251,8 @@ body::before {
 
     /* Estilos de las cards */
     .container__section {
-        width: 350px;
-        height: 200px;
+        width: 21.875rem;
+        height: 12.5rem;
     }
 
 }

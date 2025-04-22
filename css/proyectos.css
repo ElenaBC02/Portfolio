@@ -122,14 +122,18 @@ main {
 /*  Para pantallas pequeñas  */
 /*---------------------------*/
 
-@media (min-width: 0rem) and (max-width: 50rem) {
+@media (min-width: 0px) and (max-width: 800px) {
     body {
-        height: 105vh;
+        height: 120vh;
     }
     
     /* Estilos carrousel */
+    .carrousel {
+        width: 95vw;
+    }
+
     .carrousel .slide-container {
-        padding: 1rem 2.5rem;
+        padding: 1rem 1rem;
 
     }
 
@@ -142,10 +146,11 @@ main {
     .card {
         height: 28.125rem;
         width: 18.125rem;
+        margin: 0px 12px;
     }
     
     .card__img {
-        height: 12.5rem;
+        height: 180px;
     }
     
     .name {
@@ -155,6 +160,7 @@ main {
     
     .description {
         font-size: 1rem;
+        margin: .5rem 0rem;
     }
     
     .button {
@@ -166,7 +172,7 @@ main {
 /*  Para tablets  */ 
 /*----------------*/
 
-@media (min-width: 50rem) and (max-width: 75rem) {
+@media (min-width: 800px) and (max-width: 1200px) {
     body {
         height: 110vh;
     }
@@ -202,7 +208,7 @@ main {
 /*  para pantallas grandes   */
 /*---------------------------*/
 
-@media (min-width: 75rem) and (max-width: 100rem) {
+@media (min-width: 1200px) and (max-width: 1600px) {
     
     body {
         height: 110vh;

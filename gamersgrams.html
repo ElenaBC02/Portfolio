@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="Author: Elena Benítez Castro">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/navstyles.css">
@@ -14,9 +15,10 @@
 
     <body>
         <header>
+            <!-- Estructura barra de navegación -->
             <nav id="nav">
                 <div class="name">
-                    <a href="./index.html">
+                    <a href="./index.html" title="Volver a la cabecera">
                         <div>
                             <h1>ELENA BENÍTEZ</h1>
                         </div>
@@ -30,33 +32,53 @@
                     <button class="close__menu" id="close">✖</button>
 
                     <div class="sections" id="nav-sections">
-                        <a href="./sobremi.html">
-                            <div id="sobremi" class="section">Sobre mi</div>
-                        </a>
-                        <a href="./skills.html">
-                            <div id="skills" class="section">Skills</div>
-                        </a>
-                        <a href="./proyectos.html">
-                            <div id="proyectos" class="section">Proyectos</div>
-                        </a>
-                        <a href="./perfil_profesional.html">
-                            <div id="perfil_profesional" class="section">Perfil profesional</div>
-                        </a>
-                        <a href="./encuentrame.html">
-                            <div id="encuentrame" class="section">Encuéntrame</div>
-                        </a>
+                        <a href="./sobremi.html" title="Sobre mi"><div id="sobremi" class="section">Sobre mi</div></a>
+                        <a href="./skills.html" title="Skills/Habilidades"><div id="skills" class="section">Skills</div></a>
+                        <a href="./proyectos.html" title="Proyectos"><div id="proyectos" class="section">Proyectos</div></a>
+                        <a href="./perfil_profesional.html" title="Perfil profesional"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
+                        <a href="./encuentrame.html" title="Encuéntrame"><div id="encuentrame" class="section">Encuéntrame</div></a>
                     </div>
 
                 </div>
             </nav>
         </header>
 
-        <main id="content">
+        <main id="content"> <!-- Main con id enlazado a router.js -->
 
-            <iframe src="https://embed.figma.com/proto/i3Bho0Hz4WlxDDAKcg7cb9/Gamersgram---Elena-Ben%C3%ADtez?node-id=89-97&p=f&scaling=scale-down&content-scaling=fixed&page-id=85%3A94&embed-host=share" allowfullscreen></iframe>
+             <h2>Bienvenido al proyecto de Gamersgram</h2>
+
+             <!-- Contenedor de cards -->
+             <div class="container">
+
+                <!-- Contenedor con enlace a figma.html-->
+                <div class="container__figma">
+                    <h3>Ver la aplicación por figma</h3>
+
+                    <a class="button" href="./figma.html" title="Ver proyecto Gamersgram">Ver 👀</a>
+                </div>
+
+                <!-- Contenedor con video -->
+                <div class="container__video">
+                    <h3>Video diapositivas</h3>
+
+                    <video controls preload="none" poster="./assets/img/Gamersgram.png">
+                        <source src="./assets/video/video-presentacion.webm">
+                        <source src="./assets/video/video-presentacion.mp4">
+                    </video>
+                </div>
+
+                <!-- Contenedor con boton para descarga de pdf-->
+                <div class="container__donwload">
+                    <h3>Descargar diapositivas pdf</h3>
+
+                    <a class="button" href="./assets/presentación-gamersgram.pdf" download="Presentación Gamersgram" title="Descargar pdf para mejor visualización">Descargar</a>
+                </div>
+                
+             </div>
+            
         
         </main>
-        <footer></footer>
+        
     </body>
 
 </html>

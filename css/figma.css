@@ -1,0 +1,25 @@
+main {
+    background: #242323;
+}
+
+.container__iframe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 4.375rem);
+    width: 99vw;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    background: #242323;
+}
+
+@media (min-width: 0px) and (max-width: 800px) {
+    iframe {
+        height: 90%; 
+        width: 90%;
+        background: #242323;
+    }
+}

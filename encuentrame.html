@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="Author: Elena Benítez Castro">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/navstyles.css">
@@ -12,9 +13,10 @@
     </head>
     <body>
         <header>
+            <!-- Estructura barra de navegación -->
             <nav id="nav">
                 <div class="name">
-                    <a href="./index.html">
+                    <a href="./index.html" title="Volver a la cabecera">
                         <div>
                             <h1>ELENA BENÍTEZ</h1>
                         </div>
@@ -28,19 +30,23 @@
                     <button class="close__menu" id="close">✖</button>
 
                     <div class="sections" id="nav-sections">
-                        <a href="./sobremi.html"><div id="sobremi" class="section">Sobre mi</div></a>
-                        <a href="./skills.html"><div id="skills" class="section">Skills</div></a>
-                        <a href="./proyectos.html"><div id="proyectos" class="section">Proyectos</div></a>
-                        <a href="./perfil_profesional.html"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
-                        <a href="./encuentrame.html"><div id="encuentrame" class="section">Encuéntrame</div></a>
+                        <a href="./sobremi.html" title="Sobre mi"><div id="sobremi" class="section">Sobre mi</div></a>
+                        <a href="./skills.html" title="Skills/Habilidades"><div id="skills" class="section">Skills</div></a>
+                        <a href="./proyectos.html" title="Proyectos"><div id="proyectos" class="section">Proyectos</div></a>
+                        <a href="./perfil_profesional.html" title="Perfil profesional"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
+                        <a href="./encuentrame.html" title="Encuéntrame"><div id="encuentrame" class="section">Encuéntrame</div></a>
                     </div>
 
                 </div>
             </nav>
         </header>
 
-        <main id="content">
+        <main id="content">  <!-- Main con id enlazado a router.js -->
+
+            <!-- Contenedor grid para formulario y enlaces -->
             <div class="wrapper__encuentrame">
+
+                <!-- Formulario -->
                 <div class="container form">
                     <form method="POST" ACTION="url">
                         <label for="nombre">Nombre:</label><br>
@@ -72,26 +78,27 @@
                     </form>
                 </div>
 
+                <!-- Enlaces -->
                 <div class="container links">
                     
-                    <a href="https://www.linkedin.com/in/elena-ben%C3%ADtez-castro-4a6371276/" target="_blank">
+                    <a href="https://www.linkedin.com/in/elena-ben%C3%ADtez-castro-4a6371276/" target="_blank" rel="noreferer" title="Linkedln Elena Benítez">
                         <div class="link">
                             <h2>Linkedln</h2>
-                            <img src="./assets/img/Logo-linkedln.png" alt="Logo Linkedln">
+                            <img src="./assets/img/Logo-linkedln.png" alt="Logo Linkedln" loading="lazy">
                         </div>
                     </a>
 
-                    <a href="https://github.com/ElenaBC02" target="_blank">
+                    <a href="https://github.com/ElenaBC02" target="_blank" rel="noreferer" title="Github Elena Benítez">
                         <div class="link">
                             <h2>Github</h2>
-                            <img src="./assets/img/github.png" alt="Logo Github">
+                            <img src="./assets/img/github.png" alt="Logo Github" loading="lazy">
                         </div>
                     </a>
 
-                    <a href="./assets/cv-elena-benitez-castro.pdf" download="CV Elena Benítez Castro">
+                    <a href="./assets/cv-elena-benitez-castro.pdf" download="CV Elena Benítez Castro" title="Descargar CV Elena Benítez">
                         <div class="link">
                             <h2>CV</h2>
-                            <img src="./assets/img/CV.png" alt="Mi CV">
+                            <img src="./assets/img/CV.png" alt="Mi CV" loading="lazy">
                         </div>
                     </a>
                 </div>

@@ -3,6 +3,7 @@
 
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="Author: Elena Benítez Castro">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/navstyles.css">
@@ -15,9 +16,10 @@
 
     <body>
         <header>
+            <!-- Estructura barra de navegación -->
             <nav id="nav">
                 <div class="name">
-                    <a href="./index.html">
+                    <a href="./index.html" title="Volver a la cabecera">
                         <div>
                             <h1>ELENA BENÍTEZ</h1>
                         </div>
@@ -31,102 +33,87 @@
                     <button class="close__menu" id="close">✖</button>
 
                     <div class="sections" id="nav-sections">
-                        <a href="./sobremi.html">
-                            <div id="sobremi" class="section">Sobre mi</div>
-                        </a>
-                        <a href="./skills.html">
-                            <div id="skills" class="section">Skills</div>
-                        </a>
-                        <a href="./proyectos.html">
-                            <div id="proyectos" class="section">Proyectos</div>
-                        </a>
-                        <a href="./perfil_profesional.html">
-                            <div id="perfil_profesional" class="section">Perfil profesional</div>
-                        </a>
-                        <a href="./encuentrame.html">
-                            <div id="encuentrame" class="section">Encuéntrame</div>
-                        </a>
+                        <a href="./sobremi.html" title="Sobre mi"><div id="sobremi" class="section">Sobre mi</div></a>
+                        <a href="./skills.html" title="Skills/Habilidades"><div id="skills" class="section">Skills</div></a>
+                        <a href="./proyectos.html" title="Proyectos"><div id="proyectos" class="section">Proyectos</div></a>
+                        <a href="./perfil_profesional.html" title="Perfil profesional"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
+                        <a href="./encuentrame.html" title="Encuéntrame"><div id="encuentrame" class="section">Encuéntrame</div></a>
                     </div>
 
                 </div>
             </nav>
         </header>
 
-        <main id="content">
+        <main id="content"> <!-- Main con id enlazado a router.js -->
 
+            <!-- Carrousel -->
             <div class="carrousel">
 
-                <div class="slide-container">
-                    <div class="slide__content">
+                <div class="slide-container">  <!-- Conetendor por el que se deslizan las cards -->
 
-                        <div class="card">
-                            <div class="image__content">
+                    <!-- Maquetación de la card 1 -->
+                    <div class="card">
+                        <div class="image__content">
 
-                                <div class="card__image">
-                                    <img src="./assets/img/portada-gamersgrams.png" alt="Foto diseño" class="card__img">
-                                </div>
-
+                            <div class="card__image">
+                                <img src="./assets/img/portada-gamersgrams.png" alt="Foto diseño" class="card__img" loading="lazy">
                             </div>
 
-                            <div class="card__content">
-
-                                <h2 class="name">Garmersgram</h2>
-                                <p class="description">Elaboración de una aplicación móvil
-                                    con el previo análisis de mercado y necesidades de los
-                                    posibles consumidores de esta, utilizando la técnica del
-                                    doble diamante.
-                                </p>
-
-                                <a class="button" href="./gamersgrams.html">Ver más</a>
-                            </div>
                         </div>
 
+                        <div class="card__content">
+
+                            <h2 class="name">Garmersgram</h2>
+                            <p class="description">Elaboración de una aplicación móvil
+                                con el previo análisis de mercado y necesidades de los
+                                posibles consumidores de esta, utilizando la técnica del
+                                doble diamante.
+                            </p>
+
+                            <a class="button" href="./gamersgrams.html" title="Ver proyecto Gamersgram">Ver más</a>
+                        </div>
                     </div>
 
-                    <div class="slide__content">
+                    <!-- Maquetación de la card 2 -->
+                    <div class="card">
+                        <div class="image__content">
 
-                        <div class="card">
-                            <div class="image__content">
-
-                                <div class="card__image">
-                                    <img src="./assets/img/giphy.gif" alt="Foto diseño" class="card__img">
-                                </div>
-
+                            <div class="card__image">
+                                <img src="./assets/img/giphy.gif" alt="Foto diseño" class="card__img" loading="lazy">
                             </div>
 
-                            <div class="card__content">
-
-                                <h2 class="name">En proceso...</h2>
-                                <p class="description">Creando nuevo contenido</p>
-
-                            </div>
                         </div>
 
+                        <div class="card__content">
+
+                            <h2 class="name">En proceso...</h2>
+                            <p class="description">Creando nuevo contenido</p>
+
+                        </div>
                     </div>
 
-                    <div class="slide__content">
+                    <!-- Maquetación de la card 3 -->
+                    <div class="card">
+                        <div class="image__content">
 
-                        <div class="card">
-                            <div class="image__content">
-
-                                <div class="card__image">
-                                    <img src="./assets/img/giphy.gif" alt="Foto diseño" class="card__img">
-                                </div>
-
+                            <div class="card__image">
+                                <img src="./assets/img/giphy.gif" alt="Foto diseño" class="card__img" loading="lazy">
                             </div>
 
-                            <div class="card__content">
-
-                                <h2 class="name">En proceso...</h2>
-                                <p class="description">Creando nuevo contenido</p>
-
-                            </div>
                         </div>
 
+                        <div class="card__content">
+
+                            <h2 class="name">En proceso...</h2>
+                            <p class="description">Creando nuevo contenido</p>
+
+                        </div>
                     </div>
+
 
                 </div>
 
+                <!-- Puntos slider, sitúa la posición del slider -->
                 <ul class="puntos">
                     <li class="punto activo"></li>
                     <li class="punto"></li>

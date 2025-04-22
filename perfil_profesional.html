@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="Author: Elena Benítez Castro">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/navstyles.css">
@@ -12,10 +13,11 @@
         <title>PortFolio Elena Benítez Castro</title>
     </head>
     <body>
-        <header>
+        <header> 
+            <!-- Estructura de la barra de navegación -->
             <nav id="nav">
                 <div class="name">
-                    <a href="./index.html">
+                    <a href="./index.html" title="Volver a la cabecera">
                         <div>
                             <h1>ELENA BENÍTEZ</h1>
                         </div>
@@ -29,25 +31,25 @@
                     <button class="close__menu" id="close">✖</button>
 
                     <div class="sections" id="nav-sections">
-                        <a href="./sobremi.html"><div id="sobremi" class="section">Sobre mi</div></a>
-                        <a href="./skills.html"><div id="skills" class="section">Skills</div></a>
-                        <a href="./proyectos.html"><div id="proyectos" class="section">Proyectos</div></a>
-                        <a href="./perfil_profesional.html"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
-                        <a href="./encuentrame.html"><div id="encuentrame" class="section">Encuéntrame</div></a>
+                        <a href="./sobremi.html" title="Sobre mi"><div id="sobremi" class="section">Sobre mi</div></a>
+                        <a href="./skills.html" title="Skills/Habilidades"><div id="skills" class="section">Skills</div></a>
+                        <a href="./proyectos.html" title="Proyectos"><div id="proyectos" class="section">Proyectos</div></a>
+                        <a href="./perfil_profesional.html" title="Perfil profesional"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
+                        <a href="./encuentrame.html" title="Encuéntrame"><div id="encuentrame" class="section">Encuéntrame</div></a>
                     </div>
 
                 </div>
             </nav>
         </header>
 
-        <main id="content">
+        <main id="content"> <!-- Main con id enlazado a router.js -->
 
             <!--Imágenes para el fondo-->
-            <div class="background"><img class="imagen" src="./assets/img/ux-ui.jpg" alt="fondo UX/UI"></div>
-            <div class="background"><img class="imagen" src="./assets/img/diseno-web-scaled.jpg" alt="fondo Diseño Web"></div>
-            <div class="background"><img class="imagen" src="./assets/img/wordpress.png" alt="fondo WordPress"></div>
-            <div class="background"><img class="imagen" src="./assets/img/producción-y-creatividad.jpg"  alt="fondo Producción y Creatividad"></div>
-            <div class="background"><img class="imagen" src="./assets/img/diseñografico.jpg" alt="fondo Diseño Gráfico"></div>
+            <div class="background"><img class="imagen" src="./assets/img/ux-ui.jpg" alt="fondo UX/UI" loading="lazy"></div>
+            <div class="background"><img class="imagen" src="./assets/img/diseno-web-scaled.jpg" alt="fondo Diseño Web" loading="lazy"></div>
+            <div class="background"><img class="imagen" src="./assets/img/wordpress.png" alt="fondo WordPress" loading="lazy"></div>
+            <div class="background"><img class="imagen" src="./assets/img/producción-y-creatividad.jpg"  alt="fondo Producción y Creatividad" loading="lazy"></div>
+            <div class="background"><img class="imagen" src="./assets/img/diseñografico.jpg" alt="fondo Diseño Gráfico" loading="lazy"></div>
         
             <!--Contenedores para el título y la marca-->
             <div id="container">

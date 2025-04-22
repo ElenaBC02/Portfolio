@@ -2,6 +2,7 @@
 <html lang="es">
     <head>
         <meta charset="utf-8">
+        <meta name="description" content="Author: Elena Benítez Castro">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">    
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="stylesheet" href="./css/navstyles.css">
@@ -12,9 +13,10 @@
     </head>
     <body>
         <header>
+            <!-- Estructura barra de navegación -->
             <nav id="nav">
                 <div class="name">
-                    <a href="./index.html">
+                    <a href="./index.html" title="Volver a la cabecera">
                         <div>
                             <h1>ELENA BENÍTEZ</h1>
                         </div>
@@ -28,21 +30,23 @@
                     <button class="close__menu" id="close">✖</button>
 
                     <div class="sections" id="nav-sections">
-                        <a href="./sobremi.html"><div id="sobremi" class="section">Sobre mi</div></a>
-                        <a href="./skills.html"><div id="skills" class="section">Skills</div></a>
-                        <a href="./proyectos.html"><div id="proyectos" class="section">Proyectos</div></a>
-                        <a href="./perfil_profesional.html"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
-                        <a href="./encuentrame.html"><div id="encuentrame" class="section">Encuéntrame</div></a>
+                        <a href="./sobremi.html" title="Sobre mi"><div id="sobremi" class="section">Sobre mi</div></a>
+                        <a href="./skills.html" title="Skills/Habilidades"><div id="skills" class="section">Skills</div></a>
+                        <a href="./proyectos.html" title="Proyectos"><div id="proyectos" class="section">Proyectos</div></a>
+                        <a href="./perfil_profesional.html" title="Perfil profesional"><div id="perfil_profesional" class="section">Perfil profesional</div></a>
+                        <a href="./encuentrame.html" title="Encuéntrame"><div id="encuentrame" class="section">Encuéntrame</div></a>
                     </div>
 
                 </div>
             </nav>
         </header>
 
-        <main id="content">
+        <main id="content"> <!-- Main con id enlazado a router.js -->
             
+            <!-- Div padre -->
             <div class="wrapper__skills">
 
+                <!-- Cards con título e información -->
                 <div class="box">
                     <div class="tittle">
                         <h2>HTML</h2>
@@ -122,17 +126,17 @@
                     </ul>
                 </div>
                 
-
+                <!-- Slider -->
                 <div class="logos" id="logos">
                     <div class="logos__slider" id="slider">
-                        <div class="slider__item"><img src="./assets/img/HTML.png" alt="Logo HTML"></div>
-                        <div class="slider__item"><img src="./assets/img/CSS.png" alt="Logo CSS"></div>
-                        <div class="slider__item"><img src="./assets/img/JS.png" alt="Logo JS"></div>
-                        <div class="slider__item"><img src="./assets/img/github.png" alt="Logo Github"></div>
-                        <div class="slider__item"><img src="./assets/img/figma.png" alt="Logo Figma"></div>
-                        <div class="slider__item"><img src="./assets/img/mobbin.png" alt="Logo Mobbin"></div>
-                        <div class="slider__item"><img src="./assets/img/whimsical.png" alt="Logo Whimsical"></div>
-                        <div class="slider__item"><img src="./assets/img/maze.png" alt="Logo Maze"></div>
+                        <div class="slider__item"><img src="./assets/img/HTML.png" alt="Logo HTML" loading="lazy"></div>
+                        <div class="slider__item"><img src="./assets/img/CSS.png" alt="Logo CSS" loading="lazy"></div>
+                        <div class="slider__item"><img src="./assets/img/JS.png" alt="Logo JS" loading="lazy"></div>
+                        <div class="slider__item"><img src="./assets/img/github.png" alt="Logo Github" loading="lazy"></div>
+                        <div class="slider__item"><img src="./assets/img/figma.png" alt="Logo Figma" loading="lazy"></div>
+                        <div class="slider__item"><img src="./assets/img/mobbin.png" alt="Logo Mobbin" loading="lazy"></div>
+                        <div class="slider__item"><img src="./assets/img/whimsical.png" alt="Logo Whimsical" loading="lazy"></div>
+                        <div class="slider__item"><img src="./assets/img/maze.png" alt="Logo Maze" loading="lazy"></div>
                     </div> 
                 </div>
 
